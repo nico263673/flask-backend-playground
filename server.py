@@ -1,10 +1,17 @@
-from flask import Flask
+from flask import Flask, render_template, request
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
 @app.route("/")
 def index ():
-    return ("hello world")
+    return render_template("index.html")
+
+@app.route("/route-testing")
+def rt():
+    return render_template("route_test.html")
+
+
 
 
 

@@ -3,15 +3,17 @@ from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+
 @app.route("/")
 def index ():
-    return render_template("index.html")
+    #hier bekommt unser server the index html seite und gibt gleichzeitig varriablen an die html seite 
+    name = "nico"
+    age = 16
+    return render_template("index.html", name=name, age=age)
 
 @app.route("/route-testing")
 def rt():
     return render_template("route_test.html")
-
-
 
 
 

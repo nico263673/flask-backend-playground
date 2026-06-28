@@ -7,25 +7,34 @@
     <title>my app</title>
 </head>
 <body>
-    <div>
+    <div> <!--welcome script-->
         <h1>
             welcome to my app
         </h1>
 
         <p>
-            Lorem, ips
+            guten tag
         </p>
     </div>
 
-    <div>
+    <hr>
+
+    <div><!--return test-->
+        <!--
+        Doppelte geschweifte Klammern = Variable vom Server
+        Geschweifte Klammer + Prozent = Jinja-Anweisung (z. B. Schleife oder if)
+        -->
+        <p>
+            diese app wurde gemacht von mir, {{name}} und ich bin {{age}} jahre alt
+        </p>
+    </div>
+
+    <div> <!--script zum route wechseln-->
         <button id="nextroute" class="button">
             sete nummer2
         </button>
-    </div>
 
-    <div>
-        <script src="index_button_route.js">
-        </script>
+        <script src="static/index_button_route.js"></script>
     </div>
 </body>
 </html>
